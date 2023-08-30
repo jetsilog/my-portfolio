@@ -25,7 +25,7 @@ const Home = () => {
             <span className="text-cyan-500">{text}</span>
           </h4>
           <p className="text-gray-500 py-4 max-w-md">
-            Hi there! A dedicated Web Developer based in the Philippines
+            Hi there! I'm a dedicated Web Developer based in the Philippines
           </p>
           <div>
             <Link

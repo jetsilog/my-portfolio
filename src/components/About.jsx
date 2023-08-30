@@ -11,12 +11,11 @@ const about = () => {
           <p className="text-4xl font-bold inline">About</p>
         </div>
         <p className="text-xl mt-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum nisi
-          repudiandae nobis, sequi animi quibusdam sit consequuntur quos,
-          corporis ducimus asperiores tempore commodi dolor. Perferendis quia
-          beatae, ab vero recusandae ea error eos facilis distinctio, vitae
-          veritatis. Esse adipisci, facere earum, perspiciatis accusamus, rerum
-          aut optio provident quos perferendis sint.
+          Greetings! I'm Jhon Earvin B. Tangonan, a recent graduate with a
+          degree in Bachelor of Scince in Information Technology. My journey as
+          a Web Developer has just begun, but my passion for Web Development
+          knows no bounds. I may be new to the field, but I bring fresh
+          perspectives, boundless energy, and a hunger to learn and grow.
         </p>
       </div>
     </div>
