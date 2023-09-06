@@ -10,7 +10,7 @@ const about = () => {
         <div className="pb-8">
           <p className="text-4xl font-bold inline">About</p>
         </div>
-        <p className="text-xl mt-20">
+        <p className="text-xl mt-20 text-justify">
           Greetings! I'm Jhon Earvin B. Tangonan, a recent graduate with a
           degree in Bachelor of Scince in Information Technology. My journey as
           a Web Developer has just begun, but my passion for Web Development

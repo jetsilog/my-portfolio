@@ -1,8 +1,10 @@
 import React from "react";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { toast } from "react-toastify";
 
 const SocialLinks = () => {
+  const notify = () => toast.success("Downloaded");
   const links = [
     {
       id: 1,
@@ -45,6 +47,7 @@ const SocialLinks = () => {
               download={download}
               target="_blank"
               rel="noreferrer"
+              onClick={notify}
             >
               {child}
             </a>

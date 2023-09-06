@@ -1,14 +1,41 @@
 import React from "react";
 import HeroImage from "../assets/heroImage.png";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { useTypewriter } from "react-simple-typewriter";
-import { Link } from "react-scroll";
+
+import fb from "../assets/facebook.png";
+import ig from "../assets/instagram.png";
+import github from "../assets/github.png";
+import resume from "../assets/resume.png";
 
 const Home = () => {
   const [text] = useTypewriter({
     words: [" JET", " a Web Developer"],
     loop: {},
   });
+
+  const socials = [
+    {
+      id: 1,
+      src: fb,
+      href: "https://www.facebook.com/ejtngn.jet/",
+    },
+    {
+      id: 2,
+      src: ig,
+      href: "https://www.instagram.com/jet.ejt/",
+    },
+    {
+      id: 3,
+      src: github,
+      href: "https://github.com/jetsilog",
+    },
+    {
+      id: 4,
+      src: resume,
+      href: "/RESUME_TANGONAN.pdf",
+      download: true,
+    },
+  ];
 
   return (
     <div
@@ -27,18 +54,14 @@ const Home = () => {
           <p className="text-gray-500 py-4 max-w-md">
             Hi there! I'm a dedicated Web Developer based in the Philippines
           </p>
-          <div>
-            <Link
-              to="portfolio"
-              smooth
-              duration={500}
-              className="group text-white w-fit px-6 py-3 mx-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500  to-blue-500 cursor-pointer"
-            >
-              Portfolio
-              <span className="group-hover:rotate-90 duration-300">
-                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
-              </span>
-            </Link>
+          <div className="w-full flex flex-row space-x-8 py-3">
+            {socials.map(({ id, src, href, download }) => (
+              <div key={id}>
+                <a href={href} download={download}>
+                  <img src={src} alt="" className="w-10 sm:w-12 mx-auto" />
+                </a>
+              </div>
+            ))}
           </div>
         </div>
         <div>
