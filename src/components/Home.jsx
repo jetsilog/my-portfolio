@@ -56,7 +56,7 @@ const Home = () => {
           </p>
           <div className="w-full flex flex-row space-x-8 py-3">
             {socials.map(({ id, src, href, download }) => (
-              <div key={id}>
+              <div key={id} className="hover:scale-125 duration-500">
                 <a href={href} download={download}>
                   <img src={src} alt="" className="w-10 sm:w-12 mx-auto" />
                 </a>
