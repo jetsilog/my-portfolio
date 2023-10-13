@@ -38,7 +38,7 @@ const Contact = () => {
   return (
     <div
       name="contact"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen p-4 text-white"
+      className="bg-white dark:bg-gradient-to-b from-gray-800 to-black w-full h-screen p-4 text-gray-500 dark:text-white"
     >
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
         <div className="pb-8">
@@ -56,7 +56,7 @@ const Contact = () => {
               value={name}
               placeholder="Enter your name"
               onChange={(e) => setName(e.target.value)}
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md text-gray-500 dark:text-white focus:outline-none"
             />
             <input
               type="email"
@@ -64,7 +64,7 @@ const Contact = () => {
               value={email}
               placeholder="Enter your email"
               onChange={(e) => setEmail(e.target.value)}
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="my-4 p-2 bg-transparent border-2 rounded-md text-gray-500 dark:text-white focus:outline-none"
             />
             <textarea
               name="messge"
@@ -72,7 +72,7 @@ const Contact = () => {
               rows="10"
               placeholder="Enter your message"
               onChange={(e) => setMessage(e.target.value)}
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md text-gray-500 dark:text-white focus:outline-none"
             ></textarea>
             <button
               type="submit"

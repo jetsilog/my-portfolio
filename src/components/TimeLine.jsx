@@ -2,8 +2,8 @@ import React from "react";
 
 const TimeLine = () => {
   return (
-    <div class="relative font-inter antialiased">
-      <div class="relative min-h-screen flex flex-col justify-center bg-gradient-to-b from-black to-gray-800 overflow-hidden">
+    <div name="experience" class="relative font-inter antialiased">
+      <div class="relative min-h-screen flex flex-col justify-center bg-white dark:bg-gradient-to-b from-black to-gray-800 overflow-hidden">
         <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
           <div class="flex flex-col justify-center divide-y divide-slate-200 [&>*]:py-16">
             <div class="w-full max-w-3xl mx-auto">
@@ -30,14 +30,14 @@ const TimeLine = () => {
                     </div>
 
                     <div class="text-gray-400 ml-14">
-                      <span class="text-white font-bold">
+                      <span class="text-gray-500 dark:text-white font-bold">
                         ON-THE-JOB-TRAINEE{" "}
                       </span>
                       POLICE REGIONAL OFFICE 02
                     </div>
                   </div>
 
-                  <div class="p-4 rounded text-white shadow-md shadow-gray-500 ml-14 md:ml-44">
+                  <div class="p-4 rounded text-gray-500 dark:text-white shadow-md shadow-gray-500 ml-14 md:ml-44">
                     &#8226; Greeted incoming visitors and customers
                     professionally and provided friendly, knowledgeable
                     assistance. <br /> &#8226; Delivered clerical support by
@@ -66,12 +66,14 @@ const TimeLine = () => {
                     </div>
 
                     <div class="text-gray-400 ml-14">
-                      <span class="text-white font-bold">SUMMER EMPLOYEE </span>
+                      <span class="text-gray-500 dark:text-white  font-bold">
+                        SUMMER EMPLOYEE{" "}
+                      </span>
                       JPT, ACCOUNTING AND FIRMS
                     </div>
                   </div>
 
-                  <div class="p-4 rounded text-white shadow-md shadow-gray-500 ml-14 md:ml-44">
+                  <div class="p-4 rounded text-gray-500 dark:text-white shadow-md shadow-gray-500 ml-14 md:ml-44">
                     &#8226; Work with the departments of sales, accounting, and
                     law to coordinate debt collection activities <br /> &#8226;
                     Data entry for client databases, billing details, payroll,
@@ -100,12 +102,14 @@ const TimeLine = () => {
                     </div>
 
                     <div class="text-gray-400 ml-14">
-                      <span class="text-white font-bold">STUDENT INTERN </span>
+                      <span class="text-gray-500 dark:text-white  font-bold">
+                        STUDENT INTERN{" "}
+                      </span>
                       INSTRUCTURAL MEDIA CENTER
                     </div>
                   </div>
 
-                  <div class="p-4 rounded  text-white shadow-md shadow-gray-500 ml-14 md:ml-44">
+                  <div class="p-4 rounded text-gray-500 dark:text-white shadow-md shadow-gray-500 ml-14 md:ml-44">
                     &#8226; Take pictures of graduating students. <br />
                     &#8226; Editing photos. <br />
                     &#8226; Maintaining and managing photography equipment.{" "}

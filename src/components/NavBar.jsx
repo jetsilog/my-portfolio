@@ -1,8 +1,8 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
-
+import { MdDarkMode } from "react-icons/md";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const links = [
@@ -23,12 +23,31 @@ const NavBar = () => {
       link: "skills",
     },
     {
+      id: 6,
+      link: "experience",
+    },
+    {
       id: 5,
       link: "contact",
     },
   ];
+
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
+
+  const handleSwitch = () => {
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
+
   return (
-    <div className="flex justify-between items-center w-full h-20 text-white fixed bg-black px-4 z-40">
+    <div className="flex justify-between items-center w-full h-20 text-black dark:text-white fixed bg-white dark:bg-black px-4 z-40">
       <div>
         <h1 className="text-5xl font-signature">Jet</h1>
       </div>
@@ -44,6 +63,9 @@ const NavBar = () => {
             </Link>
           </li>
         ))}
+        <button onClick={handleSwitch}>
+          <MdDarkMode size={25} />
+        </button>
       </ul>
 
       <div
@@ -54,7 +76,7 @@ const NavBar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-white dark:bg-gradient-to-b from-black to-gray-800 text-gray-500">
           {links.map(({ id, link }) => (
             <li
               key={id}
@@ -70,6 +92,10 @@ const NavBar = () => {
               </Link>
             </li>
           ))}
+          <button onClick={handleSwitch}>
+            {" "}
+            <MdDarkMode size={40} />
+          </button>
         </ul>
       )}
     </div>
