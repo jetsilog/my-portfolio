@@ -13,7 +13,7 @@ const Portfolio = () => {
           <p className="py-6">My very first big project hehe</p>
         </div>
         <div className="flex flex-col mx-auto items-center justify-center md:px-12 sm:px-12">
-          <div className="shadow-md shadow-gray-600 rounded-lg">
+          <div className="shadow-md shadow-gray-600 rounded-lg mb-10">
             <img
               src={damsashs}
               alt=""
