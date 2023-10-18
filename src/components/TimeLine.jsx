@@ -2,7 +2,7 @@ import React from "react";
 
 const TimeLine = () => {
   return (
-    <div name="experience" class="relative font-inter antialiased">
+    <div name="experiences" class="relative font-inter antialiased">
       <div class="relative min-h-screen flex flex-col justify-center bg-white dark:bg-gradient-to-b from-black to-gray-800 overflow-hidden">
         <div class="w-full max-w-6xl mx-auto px-4 md:px-6 py-24">
           <div class="flex flex-col justify-center divide-y divide-slate-200 [&>*]:py-16">

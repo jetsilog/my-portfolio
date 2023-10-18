@@ -5,6 +5,8 @@ import js from "../assets/javascript.png";
 import php from "../assets/php.png";
 import tailwind from "../assets/tailwind.png";
 import bootstrap from "../assets/bootstrap.png";
+import react from "../assets/react.png";
+import node from "../assets/node.png";
 
 const Skills = () => {
   const techs = [
@@ -43,6 +45,18 @@ const Skills = () => {
       src: bootstrap,
       title: "Bootstrap",
       style: "shadow-purple-800",
+    },
+    {
+      id: 7,
+      src: react,
+      title: "React",
+      style: "shadow-cyan-800",
+    },
+    {
+      id: 8,
+      src: node,
+      title: "Node",
+      style: "shadow-green-800",
     },
   ];
 
